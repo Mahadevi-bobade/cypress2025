@@ -1,5 +1,0 @@
-cypress installation
-
-npm init -y =>package.json file
-npm install cypress --save-dev =>latest version of cypress
-npx cypress open  =>test runner will open
