@@ -23,3 +23,10 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+
+Cypress.Commands.add('OHRMLogin',(un,ln)=>{
+    cy.get('[name="username"]').type(un)
+    cy.get('[name="password"]').type(ln)
+    cy.get('[type="submit"]').click()
+})
